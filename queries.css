@@ -4,6 +4,14 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .gallery .image-wrapper {
+        flex-basis: 44%;
+        margin-left: 4%;
+        margin-bottom: 4%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     /* HEADER */
     
@@ -36,6 +44,8 @@
 }
 
 @media only screen and (max-width: 650px) {
+    /* HEADER */
+    
     .header-image {
         height: 250px;
         background-size: 150%;
@@ -45,8 +55,30 @@
         width: 100%;
     }
 
+    /* FRONT PAGE */
+
     iframe {
         height: 380px;
+    }
+
+    /* GALLERY */
+
+    .gallery .image-wrapper {
+        flex-basis: 92%;
+        margin-left: 4%;
+        margin-bottom: 4%;
+    }
+
+    /* LOGIN */
+
+    .login table tr td {
+        display: block;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .login table tr td:first-child {
+        text-align: left;
     }
 }
 
