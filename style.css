@@ -1,0 +1,150 @@
+/* --- GLOBAL --- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+main {
+  margin-bottom: 70px;
+}
+
+/* --- HEADER --- */
+
+header {
+  margin-bottom: 70px;
+}
+
+.logo-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  margin: 7px 0;
+  padding-left: 60px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#search {
+  margin-right: 60px;
+}
+
+.header-image {
+  height: 350px;
+  background: linear-gradient(
+      rgba(250, 120, 142, 0.1) 60%,
+      rgba(250, 120, 142, 0.4)
+    ),
+    url("header-img.jpg");
+  background-position: 50%;
+  background-size: cover;
+}
+
+nav {
+  padding: 7px 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+ul li {
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(247, 169, 182);
+  font-weight: bold;
+  transition: color 200ms;
+}
+
+nav a:hover {
+  color: rgb(250, 120, 142);
+}
+
+/* --- MAIN FRONTPAGE --- */
+
+.contact-info {
+  display: flex;
+}
+
+.contact-info__left,
+.contact-info__right {
+  width: 50%;
+}
+
+table {
+  margin: 0 auto;
+  line-height: 160%;
+}
+
+.contact-info__left table tr td:first-child {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 5px;
+}
+
+/* --- MAIN LOGIN --- */
+
+.login {
+  display: flex;
+  margin-bottom: 340px;
+}
+
+.login table tr td:first-child {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 5px;
+}
+
+/* --- MAIN GALLERY --- */
+
+.gallery .image-wrapper {
+  flex-basis: 28%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  background-color: rgb(255, 215, 222);
+  padding: 5px 0;
+}
+
+footer p {
+  text-align: center;
+}
